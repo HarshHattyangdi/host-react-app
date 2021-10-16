@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import User from "./User";
 import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Navbar from "./Navbar";
+import Navibar from "./Navibar";
+import { Row, Col } from "react-bootstrap";
 
 function Content() {
   const [users, setUsers] = useState([]);
@@ -23,17 +24,21 @@ function Content() {
 
   return (
     <div>
-      <Navbar />
-      <h2>Inside Contents Page</h2>
+      <Navibar />
       <InfiniteScroll
         dataLength={users.length}
         next={fetchUsers}
         hasMore={true}
         loader={<h4>Loading.....</h4>}
       >
-        {users.map((user: any) => (
-          <User key={user.login.uuid} user={user} />
-        ))}
+        <Row>
+          <Col md={3} lg={3}></Col>
+          <Col sm={12} md={6} lg={6}>
+            {users.map((user: any) => (
+              <User key={user.login.uuid} user={user} />
+            ))}
+          </Col>
+        </Row>
       </InfiniteScroll>
     </div>
   );
