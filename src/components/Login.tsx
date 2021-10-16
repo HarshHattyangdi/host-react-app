@@ -25,6 +25,16 @@ const Login = (props: any) => {
                 });
               }}
             >
+              <Row
+                style={{
+                  alignContent: "center",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  display: "flex",
+                }}
+              >
+                <h2>Login Here</h2>
+              </Row>
               <Row>
                 <Col md={2} lg={2}></Col>
                 <Col sm={12} md={8} lg={8}>
