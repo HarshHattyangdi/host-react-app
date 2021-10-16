@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/host-react-app/static/css/main.c322b076.chunk.css",
+    "main.js": "/host-react-app/static/js/main.66944f36.chunk.js",
+    "main.js.map": "/host-react-app/static/js/main.66944f36.chunk.js.map",
+    "runtime-main.js": "/host-react-app/static/js/runtime-main.5eb7d4a2.js",
+    "runtime-main.js.map": "/host-react-app/static/js/runtime-main.5eb7d4a2.js.map",
+    "static/css/2.28bb0c3d.chunk.css": "/host-react-app/static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.43746208.chunk.js": "/host-react-app/static/js/2.43746208.chunk.js",
+    "static/js/2.43746208.chunk.js.map": "/host-react-app/static/js/2.43746208.chunk.js.map",
+    "static/js/3.d7cc2461.chunk.js": "/host-react-app/static/js/3.d7cc2461.chunk.js",
+    "static/js/3.d7cc2461.chunk.js.map": "/host-react-app/static/js/3.d7cc2461.chunk.js.map",
+    "index.html": "/host-react-app/index.html",
+    "static/css/2.28bb0c3d.chunk.css.map": "/host-react-app/static/css/2.28bb0c3d.chunk.css.map",
+    "static/css/main.c322b076.chunk.css.map": "/host-react-app/static/css/main.c322b076.chunk.css.map",
+    "static/js/2.43746208.chunk.js.LICENSE.txt": "/host-react-app/static/js/2.43746208.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5eb7d4a2.js",
+    "static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.43746208.chunk.js",
+    "static/css/main.c322b076.chunk.css",
+    "static/js/main.66944f36.chunk.js"
+  ]
+}
