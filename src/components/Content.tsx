@@ -4,6 +4,7 @@ import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Navibar from "./Navibar";
 import { Row, Col } from "react-bootstrap";
+import CardSkeleton from "./CardSkeleton";
 
 function Content() {
   const [users, setUsers] = useState([]);
@@ -29,7 +30,7 @@ function Content() {
         dataLength={users.length}
         next={fetchUsers}
         hasMore={true}
-        loader={<h4>Loading.....</h4>}
+        loader={<CardSkeleton />}
       >
         <Row>
           <Col md={3} lg={3}></Col>

@@ -8,7 +8,7 @@ function User({ user }: any) {
     <Card className="mt-5">
       <Row>
         <Col sm={12} md={3} lg={3}>
-          <Card.Img variant="top" src={user.picture.large} alt="" rounded />
+          <Card.Img variant="top" src={user.picture.large} alt="" />
         </Col>
         <Col>
           <Card.Body>
