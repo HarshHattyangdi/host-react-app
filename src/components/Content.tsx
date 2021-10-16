@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import User from "./User";
 import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Navbar from "./Navbar";
 
 function Content() {
   const [users, setUsers] = useState([]);
@@ -21,8 +22,8 @@ function Content() {
   };
 
   return (
-    // console.log(users),
     <div>
+      <Navbar />
       <h2>Inside Contents Page</h2>
       <InfiniteScroll
         dataLength={users.length}

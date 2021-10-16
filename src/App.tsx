@@ -3,7 +3,8 @@ import { Link, Switch, Route, BrowserRouter } from "react-router-dom";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import Login from "./components/Login";
 import Content from "./components/Content";
-import Logout from "./components/Logout";
+import Navbar from "./components/Navbar";
+import auth from "./components/Auth";
 import "./App.css";
 
 function App() {
