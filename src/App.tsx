@@ -1,11 +1,10 @@
 import React from "react";
-import { Link, Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import Login from "./components/Login";
 import Content from "./components/Content";
-import Navbar from "./components/Navbar";
-import auth from "./components/Auth";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

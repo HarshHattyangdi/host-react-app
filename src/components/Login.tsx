@@ -1,6 +1,5 @@
 import React from "react";
 import auth from "./Auth";
-
 const Login = (props: any) => {
   return (
     <div>
