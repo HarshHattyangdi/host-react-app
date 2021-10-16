@@ -4,7 +4,6 @@ import { ProtectedRoute } from "./components/ProtectedRoute";
 import Login from "./components/Login";
 import Content from "./components/Content";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
