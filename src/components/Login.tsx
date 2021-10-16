@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import auth from "./Auth";
 import { Container, Form, Card, Row, Col } from "react-bootstrap";
 
 import { withRouter } from "react-router";
 
 const Login = (props: any) => {
+  const [username, setUsername] = useState(" ");
   return (
     <Container
       style={{
@@ -17,10 +18,10 @@ const Login = (props: any) => {
           <Card className="mt4">
             <Form
               onSubmit={() => {
-                // console.log("calling auth");
+                console.log(username);
 
                 auth.login(() => {
-                  props.history.push("/content");
+                  props.history.push("/content", username);
                 });
               }}
             >
@@ -36,6 +37,7 @@ const Login = (props: any) => {
                       type="text"
                       placeholder="Enter Username"
                       required
+                      onChange={({ target }) => setUsername(target.value)}
                     />
                   </Form.Group>
                 </Col>

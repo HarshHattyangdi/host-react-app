@@ -4,10 +4,14 @@ import auth from "./Auth";
 import { Container, Navbar, Button } from "react-bootstrap";
 
 const Navibar = (props: any) => {
+  console.log(props);
+
   return (
     <Navbar expand="lg" variant="light" bg="light">
       <Container fluid>
-        <Navbar.Brand href="#">Hello</Navbar.Brand>
+        <Navbar.Brand href="#">
+          Hello {props.history.location.state}
+        </Navbar.Brand>
       </Container>
       <Button
         variant="outline-dark"

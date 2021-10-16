@@ -11,8 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Login} />
-        <ProtectedRoute path="/content" exact component={Content} />
+        <Route exact path="/" component={Login} />
+        <ProtectedRoute exact path="/content" component={Content} />
+        <Route exact path="/*" component={Login} />
       </Switch>
     </BrowserRouter>
   );
