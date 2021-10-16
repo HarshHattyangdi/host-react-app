@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Switch, Route, BrowserRouter } from "react-router-dom";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 import Login from "./components/Login";
 import Content from "./components/Content";
 import Logout from "./components/Logout";
@@ -10,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Login} />
-        <Route path="/content" exact component={Content} />
+        <ProtectedRoute path="/content" exact component={Content} />
       </Switch>
     </BrowserRouter>
   );
