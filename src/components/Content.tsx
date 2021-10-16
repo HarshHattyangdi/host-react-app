@@ -10,12 +10,14 @@ function Content() {
     axios
       .get(`https://randomuser.me/api/?results=${count}&nat=us,dk,fr,gb`)
       .then((res: any) => setUsers(res.data.results));
-  }, []);
+  }, [count]);
 
   const fetchUsers = () => {
-    axios
-      .get(`https://randomuser.me/api/?results=${count}&nat=us,dk,fr,gb`)
-      .then((res: any) => setUsers(users.concat(res.data.results)));
+    setTimeout(() => {
+      axios
+        .get(`https://randomuser.me/api/?results=${count}&nat=us,dk,fr,gb`)
+        .then((res: any) => setUsers(users.concat(res.data.results)));
+    }, 1000);
   };
 
   return (
